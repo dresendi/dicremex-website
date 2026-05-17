@@ -431,6 +431,67 @@ ul {
   color: var(--muted);
 }
 
+.policy-body {
+  min-height: 100vh;
+}
+
+.policy-shell {
+  width: min(980px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+.policy-hero {
+  margin-bottom: 1.5rem;
+}
+
+.policy-hero h1 {
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.policy-updated {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.policy-intro + .policy-intro {
+  margin-top: 1rem;
+}
+
+.policy-card {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(60, 166, 255, 0.14), transparent 24%),
+    rgba(10, 24, 45, 0.88);
+  box-shadow: var(--shadow);
+  padding: clamp(1.25rem, 3vw, 2.2rem);
+}
+
+.policy-section + .policy-section {
+  margin-top: 1.7rem;
+  padding-top: 1.7rem;
+  border-top: 1px solid rgba(164, 199, 255, 0.12);
+}
+
+.policy-section h2 {
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
+  margin-bottom: 0.9rem;
+}
+
+.policy-section p + p,
+.policy-section ul + p,
+.policy-section p + ul {
+  margin-top: 0.9rem;
+}
+
+.policy-section li + li {
+  margin-top: 0.45rem;
+}
+
 @media (max-width: 1100px) {
   .hero-content,
   .portfolio-grid,
@@ -498,5 +559,15 @@ ul {
 
   .footer {
     flex-direction: column;
+  }
+
+  .policy-shell {
+    width: min(980px, calc(100% - 1.2rem));
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .policy-card {
+    border-radius: 20px;
   }
 }
